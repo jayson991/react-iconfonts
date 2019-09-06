@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A Project For React To Use Iconfont Intelligently",
   "author": "jayson991 <wulingjie991@outlook.com>",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c"
