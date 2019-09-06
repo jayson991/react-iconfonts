@@ -2,14 +2,18 @@
   "name": "react-iconfonts",
   "version": "0.0.1",
   "description": "A Project For React To Use Iconfont Intelligently",
+  "author": "jayson991 <wulingjie991@outlook.com>",
   "main": "src/index.js",
+  "license": "MIT",
   "scripts": {
     "build": "rollup -c"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jayson991/react-iconfonts.git"
-  },
+  "files": [
+    "lib",
+    "package.json",
+    "package-lock.json",
+    "README.md"
+  ],
   "keywords": [
     "babel",
     "react",
@@ -18,10 +22,12 @@
     "iconfont",
     "react-iconfonts"
   ],
-  "author": "jayson991 <wulingjie991@outlook.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jayson991/react-iconfonts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayson991/react-iconfonts.git"
   },
   "homepage": "https://github.com/jayson991/react-iconfonts#readme",
   "devDependencies": {
