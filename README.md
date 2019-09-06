@@ -41,7 +41,7 @@ import '/PATH TO YOUR ICONFONT FOLDER/iconfont.js'
 ```javascript
 import React from 'react'
 import './App.css'
-import IconFont from 'react-iconfont'
+import IconFont from 'react-iconfonts'
 import '/PATH TO YOUR ICONFONT FOLDER/iconfont.css'
 import '/PATH TO YOUR ICONFONT FOLDER/iconfont.js'
 ```

@@ -1,6 +1,6 @@
 {
   "name": "react-iconfonts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Project For React To Use Iconfont Intelligently",
   "author": "jayson991 <wulingjie991@outlook.com>",
   "main": "lib/index.js",
