@@ -5,7 +5,7 @@
 ## Installation
 
 ```bash
-npm i -S react-iconfonts
+$ npm i -S react-iconfonts
 ```
 
 ```javascript
