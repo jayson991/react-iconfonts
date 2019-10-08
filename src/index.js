@@ -3,27 +3,45 @@ import React, { Component } from 'react'
 
 class IconFont extends Component {
   render () {
+    const iconBlock = {
+      margin: 0,
+      padding: 0
+    }
+
+    const fontStyle = {
+      color: this.props.color ? `#${this.props.color}` : '',
+      fontSize: this.props.size ? `${this.props.size}px` : ''
+    }
+
+    const symbolStyle = {
+      width: '1em',
+      height: '1em',
+      color: this.props.color ? `#${this.props.color}` : '',
+      fontSize: this.props.size ? `${this.props.size}px` : '',
+      verticalAlign: '-0.15em',
+      fill: 'currentColor',
+      overflow: 'hidden'
+    }
+
     return (
       <span style={ iconBlock }>
         {this.props.type === 'icon' ? (
-          <i
+          <span
             className={`iconfont icon-${this.props.name}`}
-            style={{ color: this.props.color ? `#${this.props.color}` : '', fontSize: this.props.size ? `${this.props.size}px` : '' }}></i>
+            style={ fontStyle }
+          >
+          </span>
         ) : (
           <svg
             aria-hidden="true"
-            style={{ color: this.props.color ? `#${this.props.color}` : '', fontSize: this.props.size ? `${this.props.size}px` : '', width: '1em', height: '1em', verticalAlign: '-0.15em', fill: 'currentColor', overflow: 'hidden' }}>
+            style={ symbolStyle }
+          >
             <use xlinkHref={`#icon-${this.props.name}`}></use>
           </svg>
         )}
       </span>
     )
   }
-}
-
-const iconBlock = {
-  margin: 0,
-  padding: 0
 }
 
 export default IconFont
