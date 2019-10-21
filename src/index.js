@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 
 class IconFont extends Component {
-  render () {
+  render() {
     const iconBlock = {
       margin: 0,
       padding: 0
@@ -24,18 +24,13 @@ class IconFont extends Component {
     }
 
     return (
-      <span style={ iconBlock }>
+      <span style={iconBlock}>
         {this.props.type === 'icon' ? (
           <span
             className={`iconfont icon-${this.props.name}`}
-            style={ fontStyle }
-          >
-          </span>
+            style={fontStyle}></span>
         ) : (
-          <svg
-            aria-hidden="true"
-            style={ symbolStyle }
-          >
+          <svg aria-hidden='true' style={symbolStyle}>
             <use xlinkHref={`#icon-${this.props.name}`}></use>
           </svg>
         )}
