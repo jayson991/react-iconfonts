@@ -1,0 +1,30 @@
+{
+  "id": "1390775",
+  "name": "test",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12226471",
+      "name": "circle-unchecked",
+      "font_class": "circle-unchecked",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "12226617",
+      "name": "circle-checked",
+      "font_class": "circle-checked",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "12226618",
+      "name": "tick-checked",
+      "font_class": "tick-checked",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    }
+  ]
+}
