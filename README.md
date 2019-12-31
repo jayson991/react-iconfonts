@@ -9,7 +9,7 @@ $ npm i -S react-iconfonts
 ```
 
 ```javascript
-import IconFont from 'react-iconfonts'
+import IconFont from "react-iconfonts";
 ```
 
 ## Iconfont
@@ -22,7 +22,7 @@ import IconFont from 'react-iconfonts'
 
 ```js
 // Import css
-import '/PATH TO YOUR ICONFONT FOLDER/iconfont.css'
+import "/PATH TO YOUR ICONFONT FOLDER/iconfont.css";
 ```
 
 ### Symbol, Svg
@@ -31,7 +31,7 @@ import '/PATH TO YOUR ICONFONT FOLDER/iconfont.css'
 
 ```js
 // import js
-import '/PATH TO YOUR ICONFONT FOLDER/iconfont.js'
+import "/PATH TO YOUR ICONFONT FOLDER/iconfont.js";
 ```
 
 > Warning: If there is something wrong with `iconfont.js` because of `Eslint`, add this comment to the first line of `iconfont.js`: `// eslint-disable-next-line no-unused-expressions`
@@ -39,32 +39,46 @@ import '/PATH TO YOUR ICONFONT FOLDER/iconfont.js'
 ## Usage
 
 ```javascript
-import React from 'react'
-import './App.css'
-import IconFont from 'react-iconfonts'
-import '/PATH TO YOUR ICONFONT FOLDER/iconfont.css'
-import '/PATH TO YOUR ICONFONT FOLDER/iconfont.js'
+import React from "react";
+import "./App.css";
+import IconFont from "react-iconfonts";
+import "/PATH TO YOUR ICONFONT FOLDER/iconfont.css";
+import "/PATH TO YOUR ICONFONT FOLDER/iconfont.js";
 ```
 
 ```html
 <!-- FontClass -->
 <div>
   Hello
-  <IconFont type="icon" name="hasSelected" color="f00" size="30" /> FontIcon
+  <IconFont type="icon" name="circle-unchecked" color="f00" size="30" />
+  FontIcon
 </div>
 <div>
   Hello
-  <IconFont type="icon" name="notSelected" color="f00" size="30" /> FontIcon
+  <IconFont type="icon" name="tick-checked" color="f00" size="30" />
+  FontIcon
+</div>
+<div>
+  Hello
+  <IconFont type="icon" name="circle-checked" color="f00" size="30" />
+  FontIcon
 </div>
 
 <!-- Symbol, Svg -->
 <div>
   Hello
-  <IconFont type="svg" name="hasSelected" color="f00" size="30" /> SvgIcon
+  <IconFont type="svg" name="circle-unchecked" color="f00" size="30" />
+  SvgIcon
 </div>
 <div>
   Hello
-  <IconFont type="svg" name="notSelected" color="f00" size="30" /> SvgIcon
+  <IconFont type="svg" name="circle-checked" color="f00" size="30" />
+  SvgIcon
+</div>
+<div>
+  Hello
+  <IconFont type="svg" name="tick-checked" color="f00" size="30" />
+  SvgIcon
 </div>
 ```
 
