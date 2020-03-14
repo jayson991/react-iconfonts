@@ -1,10 +1,6 @@
 import React from 'react'
 
 class IconFont extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     const iconBlock = {
       margin: 0,
@@ -29,7 +25,6 @@ class IconFont extends React.Component {
     return (
       <span
         style={iconBlock}
-        onHandleClick={this.props.onHandleClick ? this.props.onHandleClick : () => {}}
       >
         {this.props.type === 'icon' ? (
           <span className={`iconfont icon-${this.props.name}`} style={fontStyle}></span>

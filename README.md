@@ -47,15 +47,6 @@ import './iconfont.css'
 import './iconfont.js'
 
 class App extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
-  // this prop is not required if you don't need it
-  onHandleClick = event => {
-    console.log(event)
-  }
-
   render() {
     return (
       <div>
@@ -63,10 +54,9 @@ class App extends React.Component {
           Hello
           <IconFont
             type='icon'
-            name='circle-unchecked'
+            name='circle-checked'
             color='f00'
             size='30'
-            onHandleClick={this.onhandleClick}
           />
           FontIcon
         </div>
@@ -75,10 +65,9 @@ class App extends React.Component {
           Hello
           <IconFont
             type='svg'
-            name='circle-unchecked'
+            name='circle-checked'
             color='f00'
             size='30'
-            onHandleClick={this.onHandleClick}
           />
           SvgIcon
         </div>
