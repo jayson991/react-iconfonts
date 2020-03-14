@@ -1,7 +1,10 @@
-// eslint-disable-next-line no-unused-vars
-import React, { Component } from 'react'
+import React from 'react'
 
-class IconFont extends Component {
+class IconFont extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     const iconBlock = {
       margin: 0,
@@ -24,11 +27,12 @@ class IconFont extends Component {
     }
 
     return (
-      <span style={iconBlock}>
+      <span
+        style={iconBlock}
+        onHandleClick={this.props.onHandleClick ? this.props.onHandleClick : () => {}}
+      >
         {this.props.type === 'icon' ? (
-          <span
-            className={`iconfont icon-${this.props.name}`}
-            style={fontStyle}></span>
+          <span className={`iconfont icon-${this.props.name}`} style={fontStyle}></span>
         ) : (
           <svg aria-hidden='true' style={symbolStyle}>
             <use xlinkHref={`#icon-${this.props.name}`}></use>

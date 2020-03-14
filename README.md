@@ -9,7 +9,7 @@ $ npm i -S react-iconfonts
 ```
 
 ```javascript
-import IconFont from "react-iconfonts";
+import IconFont from 'react-iconfonts'
 ```
 
 ## Iconfont
@@ -22,7 +22,7 @@ import IconFont from "react-iconfonts";
 
 ```js
 // Import css
-import "/PATH TO YOUR ICONFONT FOLDER/iconfont.css";
+import './iconfont.css'
 ```
 
 ### Symbol, Svg
@@ -31,7 +31,7 @@ import "/PATH TO YOUR ICONFONT FOLDER/iconfont.css";
 
 ```js
 // import js
-import "/PATH TO YOUR ICONFONT FOLDER/iconfont.js";
+import './iconfont.js'
 ```
 
 > Warning: If there is something wrong with `iconfont.js` because of `Eslint`, add this comment to the first line of `iconfont.js`: `// eslint-disable-next-line no-unused-expressions`
@@ -39,47 +39,54 @@ import "/PATH TO YOUR ICONFONT FOLDER/iconfont.js";
 ## Usage
 
 ```javascript
-import React from "react";
-import "./App.css";
-import IconFont from "react-iconfonts";
-import "/PATH TO YOUR ICONFONT FOLDER/iconfont.css";
-import "/PATH TO YOUR ICONFONT FOLDER/iconfont.js";
+import React from 'react'
+import IconFont from 'react-iconfonts'
+
+// import for IconFont usage
+import './iconfont.css'
+import './iconfont.js'
+
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  // this prop is not required if you don't need it
+  onHandleClick = event => {
+    console.log(event)
+  }
+
+  render() {
+    return (
+      <div>
+        <div>
+          Hello
+          <IconFont
+            type='icon'
+            name='circle-unchecked'
+            color='f00'
+            size='30'
+            onHandleClick={this.onhandleClick}
+          />
+          FontIcon
+        </div>
+
+        <div>
+          Hello
+          <IconFont
+            type='svg'
+            name='circle-unchecked'
+            color='f00'
+            size='30'
+            onHandleClick={this.onHandleClick}
+          />
+          SvgIcon
+        </div>
+      </div>
+    )
+  }
+}
+
+export default App
+
 ```
-
-```html
-<!-- FontClass -->
-<div>
-  Hello
-  <IconFont type="icon" name="circle-unchecked" color="f00" size="30" />
-  FontIcon
-</div>
-<div>
-  Hello
-  <IconFont type="icon" name="tick-checked" color="f00" size="30" />
-  FontIcon
-</div>
-<div>
-  Hello
-  <IconFont type="icon" name="circle-checked" color="f00" size="30" />
-  FontIcon
-</div>
-
-<!-- Symbol, Svg -->
-<div>
-  Hello
-  <IconFont type="svg" name="circle-unchecked" color="f00" size="30" />
-  SvgIcon
-</div>
-<div>
-  Hello
-  <IconFont type="svg" name="circle-checked" color="f00" size="30" />
-  SvgIcon
-</div>
-<div>
-  Hello
-  <IconFont type="svg" name="tick-checked" color="f00" size="30" />
-  SvgIcon
-</div>
-```
-
-Example [Here](https://github.com/jayson991/react-iconfonts/tree/master/example)

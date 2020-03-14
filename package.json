@@ -1,6 +1,6 @@
 {
   "name": "react-iconfonts",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A Project For React To Use Iconfont Intelligently",
   "author": "jayson991 <wulingjie991@outlook.com>",
   "main": "lib/index.js",
@@ -8,11 +8,13 @@
   "scripts": {
     "build": "rollup -c"
   },
+  "global": {
+    "react": true
+  },
   "files": [
     "lib",
-    "package.json",
-    "package-lock.json",
-    "README.md"
+    "README.md",
+    "package.json"
   ],
   "keywords": [
     "babel",
@@ -22,6 +24,7 @@
     "iconfont",
     "react-iconfonts"
   ],
+  "homepage": "https://github.com/jayson991/react-iconfonts",
   "bugs": {
     "url": "https://github.com/jayson991/react-iconfonts/issues"
   },
@@ -29,17 +32,16 @@
     "type": "git",
     "url": "git+https://github.com/jayson991/react-iconfonts.git"
   },
-  "homepage": "https://github.com/jayson991/react-iconfonts#readme",
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
+    "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-node": "^9.2.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "prettier": "^1.19.1",
     "react": "^16.13.0",
     "rollup": "^1.32.1",
     "rollup-plugin-babel": "^4.4.0",
