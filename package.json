@@ -1,6 +1,6 @@
 {
   "name": "react-iconfonts",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "description": "A Project For React To Use Iconfont Intelligently",
   "author": "jayson991 <wulingjie991@outlook.com>",
   "main": "lib/index.js",
@@ -43,7 +43,7 @@
     "eslint-plugin-react": "^7.19.0",
     "prettier": "^1.19.1",
     "react": "^16.13.0",
-    "rollup": "^1.32.1",
+    "rollup": "^2.0.6",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-uglify": "^6.0.4"
   }
