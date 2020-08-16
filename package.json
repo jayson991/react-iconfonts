@@ -1,12 +1,12 @@
 {
   "name": "react-iconfonts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Project For React To Use Iconfont Intelligently",
   "author": "jayson991 <wulingjie991@outlook.com>",
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup --config --compact"
   },
   "global": {
     "react": true
@@ -44,7 +44,6 @@
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "rollup": "^2.26.2",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-uglify": "^6.0.4"
+    "rollup-plugin-babel": "^4.4.0"
   }
 }

@@ -1,5 +1,4 @@
 import babel from 'rollup-plugin-babel'
-import { uglify } from 'rollup-plugin-uglify'
 
 const config = {
   input: 'src/index.js',
@@ -15,8 +14,7 @@ const config = {
   plugins: [
     babel({
       exclude: 'node_modules/**'
-    }),
-    uglify()
+    })
   ]
 }
 
