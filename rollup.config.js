@@ -1,10 +1,11 @@
-import babel from 'rollup-plugin-babel'
+import babel from '@rollup/plugin-babel'
+import {terser} from 'rollup-plugin-terser'
 
 const config = {
   input: 'src/index.js',
   external: ['react'],
   output: {
-    name: 'react-iconfonts.js',
+    name: 'index.js',
     format: 'umd',
     globals: {
       react: 'React'
@@ -13,8 +14,10 @@ const config = {
   },
   plugins: [
     babel({
+      babelHelpers: 'bundled',
       exclude: 'node_modules/**'
-    })
+    }),
+    terser()
   ]
 }
 
